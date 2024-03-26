@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Página Inicial</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Lista de Atletas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>nome</th>
+                    <th>idade</th>
+                    <th>peso</th>
+                    <th>altura</th>
+                    <th>clube</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for atleta in atletas %}
+                <tr>
+                    <td>{{ atleta[1] }}</td>
+                    <td>{{ atleta[2] }}</td>
+                    <td>{{ atleta[3] }}</td>
+                    <td>{{ atleta[4] }}</td>
+                    <td>{{ atleta[5] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
