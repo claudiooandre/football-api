@@ -16,3 +16,7 @@ Installed the flask framework with the following command in the environment
 Created a template folder and added the index.html, dashboard.html and login.html on it
 
 < next steps are coming :) >
+
+to do:
+- check the language
+- check the databases
