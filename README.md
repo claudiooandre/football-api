@@ -9,7 +9,7 @@ and activated it
 
 Added the main.py file and put my code on it
 
-Installed the flask with the following command in the environment
+Installed the flask framework with the following command in the environment
 
   - pip3 install flask 
 
