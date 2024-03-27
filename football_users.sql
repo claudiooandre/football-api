@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.36, for macos14 (x86_64)
 --
--- Host: 127.0.0.1    Database: futebol
+-- Host: 127.0.0.1    Database: football
 -- ------------------------------------------------------
 -- Server version	8.3.0
 
