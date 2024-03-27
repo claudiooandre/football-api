@@ -3,45 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Main</title>
 </head>
 <body>
     <header>
-        <h1>Dashboard</h1>
+        <h1>Main</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="/">Página Inicial</a></li>
+            <li><a href="/">Home Page</a></li>
             <li><a href="/logout">Logout</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Lista de Atletas</h2>
+        <h2>Athletes list</h2>
         <table>
             <thead>
                 <tr>
-                    <th>nome</th>
-                    <th>idade</th>
-                    <th>peso</th>
-                    <th>altura</th>
-                    <th>clube</th>
+                    <th>name</th>
+                    <th>age</th>
+                    <th>weight</th>
+                    <th>tall</th>
+                    <th>team</th>
                 </tr>
             </thead>
             <tbody>
-                {% for atleta in atletas %}
+                {% for athlete in athletes %}
                 <tr>
-                    <td>{{ atleta[1] }}</td>
-                    <td>{{ atleta[2] }}</td>
-                    <td>{{ atleta[3] }}</td>
-                    <td>{{ atleta[4] }}</td>
-                    <td>{{ atleta[5] }}</td>
+                    <td>{{ athlete[1] }}</td>
+                    <td>{{ athlete[2] }}</td>
+                    <td>{{ athlete[3] }}</td>
+                    <td>{{ athlete[4] }}</td>
+                    <td>{{ athlete[5] }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </main>
     <footer>
-        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Football Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
