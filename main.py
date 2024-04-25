@@ -37,14 +37,14 @@ def login():
         connection.close() 
         if user:
             session['username'] = username
-            return redirect(url_for('main'))
+            return redirect(url_for('athletes'))
         else:
             return 'Login invalid'
     return render_template('login.html')
 
 # Route to main page
-@app.route('/main')
-def main():
+@app.route('/athletes')
+def athletes():
     if 'username' in session:
         # Connection to the database
         connection = conectar_mysql()
@@ -54,7 +54,7 @@ def main():
         ###print(athletes)
         cursor.close()
         connection.close() 
-        return render_template('main.html', athletes=athletes)
+        return render_template('athletes.html', athletes=athletes)
     return redirect(url_for('login'))
 
 # Route to logout
