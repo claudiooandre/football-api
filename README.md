@@ -13,7 +13,7 @@ Installed the flask framework with the following command in the environment
 
   - pip3 install flask 
 
-Created a template folder and added the homepage.html, main.html and login.html on it
+Created a template folder and added the homepage.html, athletes.html and login.html on it
 
 < next steps are coming :) >
 
