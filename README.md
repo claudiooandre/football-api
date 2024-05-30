@@ -1,4 +1,4 @@
-# football website
+# project1
 
 Added a Project folder
 
@@ -13,9 +13,9 @@ Installed the flask framework with the following command in the environment
 
   - pip3 install flask 
 
-Created a template folder and added the homepage.html, athletes.html and login.html on it
+Created a template folder and added the homepage.html, season.html, league.html, team.html, athletes.html and login.html on it
 
-< next steps are coming :) >
+I did my sql database "football". See in attachment diagramer.mwb and football.sql.
 
 to do:
-- check the databases
+- the links to the database and the code are missing
