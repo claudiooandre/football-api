@@ -37,12 +37,57 @@ def login():
         connection.close() 
         if user:
             session['username'] = username
-            return redirect(url_for('athletes'))
+            return redirect(url_for('season'))
         else:
             return 'Login invalid'
     return render_template('login.html')
 
-# Route to main page
+# Route to season
+@app.route('/season')
+def season():
+    if 'username' in session:
+        # Connection to the database
+        connection = conectar_mysql()
+        cursor = connection.cursor()
+        cursor.execute('SELECT * FROM football.season')
+        season = cursor.fetchall()
+        ###print(season)
+        cursor.close()
+        connection.close() 
+        return render_template('season.html', season=season)
+    return redirect(url_for('login'))
+
+# Route to league
+@app.route('/league')
+def league():
+    if 'username' in session:
+        # Connection to the database
+        connection = conectar_mysql()
+        cursor = connection.cursor()
+        cursor.execute('SELECT * FROM football.league')
+        league = cursor.fetchall()
+        ###print(league)
+        cursor.close()
+        connection.close() 
+        return render_template('league.html', league=league)
+    return redirect(url_for('login'))
+
+# Route to team
+@app.route('/team')
+def team():
+    if 'username' in session:
+        # Connection to the database
+        connection = conectar_mysql()
+        cursor = connection.cursor()
+        cursor.execute('SELECT * FROM football.team')
+        team = cursor.fetchall()
+        ###print(team)
+        cursor.close()
+        connection.close() 
+        return render_template('team.html', team=team)
+    return redirect(url_for('login'))
+
+# Route to athletes
 @app.route('/athletes')
 def athletes():
     if 'username' in session:
