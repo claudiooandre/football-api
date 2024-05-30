@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Athletes</title>
+    <title>League</title>
 </head>
 <body>
     <header>
-        <h1>Athletes</h1>
+        <h1>League</h1>
     </header>
     <nav>
         <ul>
@@ -21,25 +21,19 @@
         </ul>
     </nav>
     <main>
-        <h2>Athletes list</h2>
+        <h2>League</h2>
         <table>
             <thead>
                 <tr>
-                    <th>name</th>
-                    <th>age</th>
-                    <th>weight (kg)</th>
-                    <th>tall (cm)</th>
-                    <th>team</th>
+                    <th>league</th>
+                    <th>country</th>
                 </tr>
             </thead>
             <tbody>
-                {% for athlete in athletes %}
+                {% for leagu in league %}
                 <tr>
-                    <td>{{ athlete[1] }}</td>
-                    <td>{{ athlete[2] }}</td>
-                    <td>{{ athlete[3] }}</td>
-                    <td>{{ athlete[4] }}</td>
-                    <td>{{ athlete[5] }}</td>
+                    <td>{{ leagu[1] }}</td>
+                    <td>{{ leagu[2] }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
