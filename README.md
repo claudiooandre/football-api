@@ -1,6 +1,6 @@
-# football
+# football app
 
-Added a Project folder
+Added a folder
 
 Set up an environment in that folder 
   - python3 -m venv env
