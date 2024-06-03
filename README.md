@@ -1,4 +1,4 @@
-# football api
+# football-api
 
 Added a folder
 
