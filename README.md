@@ -1,5 +1,3 @@
-(in progress)
-
 # football-website
 
 Added a folder
