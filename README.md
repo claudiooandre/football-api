@@ -5,14 +5,12 @@ A Python-based API for football data that serves team and match information, and
 Structure
 
 football_api
-│
-├── backend
-│   ├── app.py        # API logic and endpoints
-│   ├── teams.csv     # CSV containing team information
-│   └── matches.csv   # CSV containing match information
-│
-└── frontend
-    └── index.html    # Frontend interface to display data and interact with the API
+    backend
+        app.py        # API logic and endpoints
+        teams.csv     # CSV containing team information
+        matches.csv   # CSV containing match information
+    frontend
+        index.html    # Frontend interface to display data and interact with the API
 
 How to Use
 
