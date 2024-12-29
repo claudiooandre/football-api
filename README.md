@@ -1,21 +1,25 @@
-# football-website
+#football_api
 
-Added a folder
+A Python-based API for football data that serves team and match information, and allows you to add new match data. This API provides endpoints for retrieving team information and match results, as well as adding new match results.
 
-Set up an environment in that folder 
-  - python3 -m venv env
-and activated it 
-  - source env/bin/activate
+Structure
 
-Added the main.py file and put my code on it
+football_api
+│
+├── backend
+│   ├── app.py        # API logic and endpoints
+│   ├── teams.csv     # CSV containing team information
+│   └── matches.csv   # CSV containing match information
+│
+└── frontend
+    └── index.html    # Frontend interface to display data and interact with the API
 
-Installed the flask framework with the following command in the environment
+How to Use
 
-  - pip3 install flask 
+Run the Backend:
+  - Navigate to the backend directory and run the Flask application:
+    python3 app.py
+The API will be available at http://localhost:5000.
 
-Created a template folder and added the homepage.html, season.html, league.html, team.html, athletes.html and login.html on it
-
-I did my sql database "football". See in attachment diagramer.mwb and football.sql.
-
-to do:
-- the links to the database and the code are missing
+Access the Frontend:
+  - Open the frontend/index.html file in a web browser to view and interact with the API.
