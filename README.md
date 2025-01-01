@@ -1,4 +1,4 @@
-#football_api
+Football Data API
 
 A Python-based API for football data that serves team and match information, and allows you to add new match data. This API provides endpoints for retrieving team information and match results, as well as adding new match results.
 
