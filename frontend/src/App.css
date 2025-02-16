@@ -1,0 +1,44 @@
+body {
+    background-image: url('http://localhost:3000/background.jpg'); /* URL completo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: red; /* Estilo temporário para verificar se o CSS está sendo aplicado */
+}
+
+.App {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.8); /* Adiciona um fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+section {
+    margin-bottom: 20px;
+}
